@@ -1,0 +1,89 @@
+
+
+@font-face {
+    font-family: 'Smart';
+    src: url('../font/03SmartFontUI.woff') format('woff');
+}
+
+* {
+    font-family: 'Smart';    
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}    
+
+body{
+    height: 100%;
+}
+
+/*signup*/
+.wallpaper{  
+    position: absolute;
+    background-color: aqua;
+    z-index:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/wallpaper.jpg");
+}
+
+.login{
+    text-align: center;    
+    margin: 0 auto;  
+    margin-top: 6%;
+    background-color: rgba(255,255,255,0.9);
+    width: 80%;
+    height: 80%; 
+}
+.login p{
+    font-size: 20px;   
+    padding-top: 20px;
+}
+
+.logo{  
+    padding-top: 40px;
+    width: 200px;
+}
+
+.fb-login{
+    margin-top: 30px;
+
+    width: 600px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #315096;  
+    display: inline-block;  
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);    
+}
+
+.fb-login:hover{
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);    
+}
+
+
+.fb-login p{
+    margin-top: 40px;
+    font-size: 35px;
+    color: white;
+}
+
+.twitter-login{ 
+    margin-top: 5px;    
+    width: 600px;
+    height: 150px;   
+    border-radius: 15px;    
+    background-color: #55acee;
+    display: inline-block;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);   
+}
+
+.twitter-login:hover{
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);    
+}
+
+.twitter-login p{
+    margin-top: 40px;    
+    font-size: 35px;    
+    color: white;    
+}

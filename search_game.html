@@ -1,244 +1,517 @@
 <!DOCTYPE html>
 <html lang="ja">
 <header>
-  <meta charset="UTF-8">    
-  <title>Sportif</title>
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />    
-  <script src="./js/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" href="./css/main.css"> 
-  <a href = "index.html">
-    <img class="logo" src="./img/logo_black.png">
-  </a>
-  
-  <nav>
-    <ul>
-      <li><a href="./index.html">タイムライン</a></li>
-      <li><a href="./search_player.html">選手情報</a></li>
-      <li class="now"><a href="./search_game.html">試合情報</a></li>
-      <li><a href="./about_us.html">Sportifって?</a></li>      
-      <li><a href="./mypage.html">マイページ</a></li>          
-    </ul>
-  </nav> 
-  <div class="header_search">
-    <input class="header_search_input" type="text" 
-        placeholder="気になるワードを入力">   
-    <span>
+    <meta charset="UTF-8">
+    <title>Sportif</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <a href="index.html">
+        <img class="logo" src="./img/logo_black.png">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">タイムライン</a></li>
+            <li><a href="./search_player.html">選手情報</a></li>
+            <li class="now"><a href="./search_game.html">試合情報</a></li>
+            <li><a href="./about_us.html">Sportifって?</a></li>
+            <li><a href="./mypage.html">マイページ</a></li>
+        </ul>
+    </nav>
+    <div class="header_search">
+        <input class="header_search_input" type="text" placeholder="気になるワードを入力">
+        <span>
         <i class="fa fa-search"></i>
-    </span> 
-    <div class="header_login">
-        <p>ログイン</p>
-    </div>       
-  </div> 
+    </span>
+        <div class="header_login">
+            <p>ログイン</p>
+        </div>
+    </div>
 </header>
-  
-<body>  
+
+<body>
     <div class="search_game_left_box">
-                <div class="col-1">
-                    <ul class="stack_menu">
-                        <h5>カテゴリー</h5>
-                        <a href="about_player.html">
-                            <li><div class="team_menu">すべての試合</div></li>
-                        </a>       
-                        <a href="about_player.html">
-                            <li><div class="team_menu">特集</div></li>
-                        </a>                                           
-                        <a href="about_player.html">
-                            <li><div class="team_menu">1週間以内の試合</div></li>
-                        </a>                          
-                        <a href="about_player.html">
-                            <li><div class="team_menu">7月の試合</div></li>
-                        </a>  
-                        <a href="about_player.html">
-                            <li><div class="team_menu">8月の試合</div></li>
-                        </a>       
-                        <a href="about_player.html">
-                            <li><div class="team_menu">9月の試合</div></li>
-                        </a>
-                        <a href="about_player.html">
-                            <li><div class="team_menu">それ以降の試合</div></li>
-                        </a>      
-                                          
-                    </ul>
-        </div>       
+        <div class="col-1">
+            <ul class="stack_menu">
+                <h5>カテゴリー</h5>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">すべての試合</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">特集</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">1週間以内の試合</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">7月の試合</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">8月の試合</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">9月の試合</div>
+                    </li>
+                </a>
+                <a href="about_player.html">
+                    <li>
+                        <div class="team_menu">それ以降の試合</div>
+                    </li>
+                </a>
+
+            </ul>
+        </div>
         <div class="col-7">
-                   <!--ss-->
-                    <div class="game_info">
-                        <div class="game_date"><h5>7月27日</h5><h6>(水)</h6><h5>18</h5><h6>時</h6>　<h5>甲子園球場プレイボール</h5></div>
-                        <img src="img/team_logo/giants_game.png">
-                        <div class="versus">V.S.</div>
-                        <img src="img/team_logo/logo_baystars_game.png">
-                        <div class=""></div>
-                        <a href="#">
-                            <div class="more_detail">もっと詳しく見る</div>
-                        </a>
-                    </div>
-                    <div class="game_info">
-                        <div class="game_date"><h5>7月27日</h5><h6>(水)</h6><h5>18</h5><h6>時</h6>　<h5>甲子園球場プレイボール</h5></div>
-                        <img src="img/team_logo/giants_game.png">
-                        <div class="versus">V.S.</div>
-                        <img src="img/team_logo/logo_baystars_game.png">
-                        <div class=""></div>
-                        <a href="#">
-                            <div class="more_detail">もっと詳しく見る</div>
-                        </a>
-                    </div>
-                    <div class="game_info">
-                        <div class="game_date"><h5>7月27日</h5><h6>(水)</h6><h5>18</h5><h6>時</h6>　<h5>甲子園球場プレイボール</h5></div>
-                        <img src="img/team_logo/giants_game.png">
-                        <div class="versus">V.S.</div>
-                        <img src="img/team_logo/logo_baystars_game.png">
-                        <div class=""></div>
-                        <a href="#">
-                            <div class="more_detail">もっと詳しく見る</div>
-                        </a>
-                    </div>
-                    <div class="game_info">
-                        <div class="game_date"><h5>7月27日</h5><h6>(水)</h6><h5>18</h5><h6>時</h6>　<h5>甲子園球場プレイボール</h5></div>
-                        <img src="img/team_logo/giants_game.png">
-                        <div class="versus">V.S.</div>
-                        <img src="img/team_logo/logo_baystars_game.png">
-                        <div class=""></div>
-                        <a href="#">
-                            <div class="more_detail">もっと詳しく見る</div>
-                        </a>
-                    </div>
-                    <div class="game_info">
-                        <div class="game_date"><h5>7月27日</h5><h6>(水)</h6><h5>18</h5><h6>時</h6>　<h5>甲子園球場プレイボール</h5></div>
-                        <img src="img/team_logo/giants_game.png">
-                        <div class="versus">V.S.</div>
-                        <img src="img/team_logo/logo_baystars_game.png">
-                        <div class=""></div>
-                        <a href="#">
-                            <div class="more_detail">もっと詳しく見る</div>
-                        </a>
-                    </div>                                                                                
+            <!--ss-->
+            <div class="game_info">
+                <div class="game_date">
+                    <h5>7月27日</h5>
+                    <h6>(水)</h6>
+                    <h5>18</h5>
+                    <h6>時</h6>
+                    <h5>甲子園球場プレイボール</h5>
                 </div>
-            <li>    
-                <div class="col-2">
-
-                    <div class="hot">
-                        <h1>応援数ランキング</h1>    
-                       <!--ss-->
-                        <a href="#">
-                           <div class="hot-box">
-                               <img src="img/players/player1.jpg"> <h4>No.</h4>
-                               <h5>1</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>
-                           
-                               <h6>アメダス</h6>    
-                           </div>
-                        </a>  
-                        <a href="#">
-                           <div class="hot-box">
-                                
-                               <img src="img/players/player2.jpg"> <h4>No.</h4>
-                               <h5>2</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>           
-                            
-                               <h6>アドゥア</h6>                               
-                           </div>
-                        </a>  
-                        <a href="#">
-                           <div class="hot-box">
-                               <img src="img/players/player3.jpg"> <h4>No.</h4>
-                               <h5>3</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>                                                                
-                               <h6>アマダー</h6>
-                           </div>
-                        </a>                                                                                           
-                    </div>   
-                    <div class="hot">
-                        <h1>急上昇ランキング</h1>
-                       <!--ss-->
-                        <a href="#">
-                           <div class="hot-box">
-                               <img src="img/players/player4.jpg"> <h4>No.</h4>
-                               <h5>1</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>                                      
-                               <h6>アウラホ</h6>
-                           </div>
-                        </a>  
-                        <a href="#">
-                           <div class="hot-box">
-                               <img src="img/players/player5.jpg"> 
-                               <h4>No.</h4>
-                               <h5>2</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>                     
-                               <h6>相川　亮二</h6>
-                           </div>
-                        </a>      
-                        <a href="#">
-                           <div class="hot-box">
-
-                               <img src="img/players/player3.jpg"> 
-                               <h4>No.</h4>
-                               <h5>3</h5>
-                               <h2>10</h2>
-                               <h3>万
-                                   <i class="fa fa-flag" aria-hidden="true"></i>
-                               </h3>                                                              
-                               <h6>アマダー</h6>
-                           </div>
-                        </a>                               
-                    </div> 
-                    
-                    <div class="hot">
-                        <h1>話題のキーワード</h1>
+                <img src="img/team_logo/giants_game.png">
+                <div class="versus">V.S.</div>
+                <img src="img/team_logo/logo_baystars_game.png">
+                <!--クリックしたら表示-->
+                <div class="hidden_box">
+                    <input type="checkbox" id="label1" />
+                    <label class="more_detail" for="label1">もっと詳しく見る</label>
+                    <div class="hidden_show">
                         
-                        <!--ss-->
-                        <a href="#">
-                           <div class="hot-keyword">
-                              <i class="fa fa-tags" aria-hidden="true"> 大谷</i>
-                           </div>
-                        </a>                     
-                        <a href="#">
-                           <div class="hot-keyword">
-                              <i class="fa fa-tags" aria-hidden="true"> カープ女子</i>
-                           </div>
-                        </a>  
-                        <a href="#">
-                           <div class="hot-keyword">
-                              <i class="fa fa-tags" aria-hidden="true"> ボストンレッドソックス</i>
-                           </div>
-                        </a>   
-                        <a href="#">
-                           <div class="hot-keyword">
-                              <i class="fa fa-tags" aria-hidden="true"> とんねるず</i>
-                           </div>
-                        </a>                       
-                        <a href="#">
-                           <div class="hot-keyword">
-                              <i class="fa fa-tags" aria-hidden="true"> 甲子園球場</i>
-                           </div>
-                        </a>                      
-                                                                                                                                                                            
-                    </div>                                     
+                        <div class="left-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                        </div>
+                        <div class="right-players">
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/nakata.jpg">
+                            </p>                            
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul> 
-    </div>         
+            </div>
+
+
+
+            <div class="game_info">
+                <div class="game_date">
+                    <h5>7月27日</h5>
+                    <h6>(水)</h6>
+                    <h5>18</h5>
+                    <h6>時</h6>
+                    <h5>甲子園球場プレイボール</h5>
+                </div>
+                <img src="img/team_logo/giants_game.png">
+                <div class="versus">V.S.</div>
+                <img src="img/team_logo/logo_baystars_game.png">
+                <!--クリックしたら表示-->
+                <div class="hidden_box">
+                    <input type="checkbox" id="label2" />
+                    <label class="more_detail" for="label2">もっと詳しく見る</label>
+                    <div class="hidden_show">
+                        
+                        <div class="left-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                        </div>
+                        <div class="right-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game_info">
+                <div class="game_date">
+                    <h5>7月27日</h5>
+                    <h6>(水)</h6>
+                    <h5>18</h5>
+                    <h6>時</h6>
+                    <h5>甲子園球場プレイボール</h5>
+                </div>
+                <img src="img/team_logo/giants_game.png">
+                <div class="versus">V.S.</div>
+                <img src="img/team_logo/logo_baystars_game.png">
+                <!--クリックしたら表示-->
+                <div class="hidden_box">
+                    <input type="checkbox" id="label3" />
+                    <label class="more_detail" for="label3">もっと詳しく見る</label>
+                    <div class="hidden_show">
+                        
+                        <div class="left-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                        </div>
+                        <div class="right-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="game_info">
+                <div class="game_date">
+                    <h5>7月27日</h5>
+                    <h6>(水)</h6>
+                    <h5>18</h5>
+                    <h6>時</h6>
+                    <h5>甲子園球場プレイボール</h5>
+                </div>
+                <img src="img/team_logo/giants_game.png">
+                <div class="versus">V.S.</div>
+                <img src="img/team_logo/logo_baystars_game.png">
+                <!--クリックしたら表示-->
+                <div class="hidden_box">
+                    <input type="checkbox" id="label4" />
+                    <label class="more_detail" for="label4">もっと詳しく見る</label>
+                    <div class="hidden_show">
+                        
+                        <div class="left-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                        </div>
+                        <div class="right-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game_info">
+                <div class="game_date">
+                    <h5>7月27日</h5>
+                    <h6>(水)</h6>
+                    <h5>18</h5>
+                    <h6>時</h6>
+                    <h5>甲子園球場プレイボール</h5>
+                </div>
+                <img src="img/team_logo/giants_game.png">
+                <div class="versus">V.S.</div>
+                <img src="img/team_logo/logo_baystars_game.png">
+                <!--クリックしたら表示-->
+                <div class="hidden_box">
+                    <input type="checkbox" id="label5" />
+                    <label class="more_detail" for="label5">もっと詳しく見る</label>
+                    <div class="hidden_show">
+                        
+                        <div class="left-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                        </div>
+                        <div class="right-players">
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>
+                            <p class="trimming"><img class="p1" src="./img/players/abe.jpg">
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>                                    
+        </div>
+        <li>
+            <div class="col-2">
+
+                <div class="hot">
+                    <h1>応援数ランキング</h1>
+                    <!--ss-->
+                    <a href="#">
+                        <div class="hot-box">
+                            <img src="img/players/player1.jpg">
+                            <h4>No.</h4>
+                            <h5>1</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+
+                            <h6>アメダス</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-box">
+
+                            <img src="img/players/player2.jpg">
+                            <h4>No.</h4>
+                            <h5>2</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+
+                            <h6>アドゥア</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-box">
+                            <img src="img/players/player3.jpg">
+                            <h4>No.</h4>
+                            <h5>3</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+                            <h6>アマダー</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="hot">
+                    <h1>急上昇ランキング</h1>
+                    <!--ss-->
+                    <a href="#">
+                        <div class="hot-box">
+                            <img src="img/players/player4.jpg">
+                            <h4>No.</h4>
+                            <h5>1</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+                            <h6>アウラホ</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-box">
+                            <img src="img/players/player5.jpg">
+                            <h4>No.</h4>
+                            <h5>2</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+                            <h6>相川　亮二</h6>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-box">
+
+                            <img src="img/players/player3.jpg">
+                            <h4>No.</h4>
+                            <h5>3</h5>
+                            <h2>10</h2>
+                            <h3>万
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                            </h3>
+                            <h6>アマダー</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hot">
+                    <h1>話題のキーワード</h1>
+
+                    <!--ss-->
+                    <a href="#">
+                        <div class="hot-keyword">
+                            <i class="fa fa-tags" aria-hidden="true"> 大谷</i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-keyword">
+                            <i class="fa fa-tags" aria-hidden="true"> カープ女子</i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-keyword">
+                            <i class="fa fa-tags" aria-hidden="true"> ボストンレッドソックス</i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-keyword">
+                            <i class="fa fa-tags" aria-hidden="true"> とんねるず</i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hot-keyword">
+                            <i class="fa fa-tags" aria-hidden="true"> 甲子園球場</i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </li>
+
+    </div>
 </body>
 
 <footer>
-  <div class="header-twitter btn">
-    <i class="fa fa-twitter  header-sns-btn"></i>
-  </div>  
-  <div class="header-facebook">
-    <i class="fa fa-facebook header-sns-btn"></i>
-  </div>    
+    <div class="header-twitter btn">
+        <i class="fa fa-twitter  header-sns-btn"></i>
+    </div>
+    <div class="header-facebook">
+        <i class="fa fa-facebook header-sns-btn"></i>
+    </div>
 </footer>
