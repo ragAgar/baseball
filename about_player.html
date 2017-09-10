@@ -5,11 +5,14 @@
     <title>Sportif</title>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>    
+    <script src="./js/Chart.js"></script>
+    <script src="./js/Chart.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
+
     <a href="index.html">
         <img class="logo" src="./img/logo_black.png">
-    </a> 
+    </a>
+
     <nav>
         <ul>
             <li><a href="./index.html">タイムライン</a></li>
@@ -33,198 +36,200 @@
 
 </header>
 
+
 <body>
-    <div>
-        <ul>
-            <li class="content">
-                <div class="all-panel">
-
-                    <div class="col-panel1">
-                        <img class="col-panel-1-img" src="img/players/player1.jpg">
-                        <div class="img-name-panel1">
-                           <p>
-                            Amedas
-                            </p>
-                        </div>                        
-                    </div>
-
-                    <div class="panel-2 col-panel-2">
-
-                            <p>アメダス</p>
-                            <div class="switch-plot-btn">
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                応援数
-                            </div>
-                            <div class="panel-2-plot">
-                                <canvas id="myChart" class="mychart" width="500" height="700"></canvas>
-                                <script>
-                                    var ctx = document.getElementById("myChart").getContext("2d");
-
-                                    // Create gradient
-                                    grd = ctx.createLinearGradient(0.000, 350.000, 0.000, 100.000);
-
-                                    // Add colors
-                                    grd.addColorStop(0.000, 'rgba(135, 198, 190, 1.000)');
-                                    grd.addColorStop(0.200, 'rgba(137, 200, 193, 1.000)');
-                                    grd.addColorStop(0.400, 'rgba(139, 201, 196, 1.000)');
-                                    grd.addColorStop(0.600, 'rgba(141, 199, 200, 1.000)');
-                                    grd.addColorStop(0.800, 'rgba(138, 195, 205, 1.000)');
-                                    grd.addColorStop(1.000, 'rgba(130, 186, 214, 1.000)');
-
-
-
-
-                                    var data = {
-                                      labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
-                                      datasets: [{
-                                        lineTension: 0.1,
-                                        backgroundColor: grd,
-                                        borderCapStyle: 'butt',
-                                        borderDash: [],
-                                        borderDashOffset: 0.0,
-                                        borderJoinStyle: 'miter',
-                                        pointBorderColor: "rgba(75,192,192,1)",
-                                        pointBackgroundColor: "#fff",
-                                        pointBorderWidth: 1,
-                                        pointHoverRadius: 5,
-                                        pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                                        pointHoverBorderColor: "rgba(220,220,220,1)",
-                                        pointHoverBorderWidth: 2,
-                                        pointRadius: 1,
-                                        pointHitRadius: 10,
-                                        data: [0, 100, 250, 400, 400, 400, 500, 700, 900, 1000, 1000, 1300, 6000, 1100, 900, 700, 500, 300, 100, 0],
-                                        spanGaps: false,
-                                      }]
-                                    };
-
-
-                                    var myChart = new Chart(ctx, {
-                                      type: 'line',
-                                      data: data,
-                                      options: {
-                                        maintainAspectRatio: false,
-                                        legend: {
-                                          display: false
-                                        },
-                                        scales: {
-                                          yAxes: [{
-                                            ticks: {
-                                              beginAtZero: true,
-                                              callback: function(value, index, values) {
-                                                return value + '°';
-                                              },
-                                              mirror: true,
-                                            },
-                                            gridLines: {
-                                              display: false,
-                                              drawBorder: false,
-
-                                            },
-                                          }],
-                                          xAxes: [{
-                                            display: false,
-                                            gridLines: {
-                                              display: false
-                                            }
-                                          }]
-                                        },
-
-                                      },
-                                    });
-                                
-                                </script>
-                            </div>
-
-                    </div>
-
-                    <div class="col-panel-3">
-                        <div class="panel-3-child-half">      
-                           <h1 class="panel-3-half"> 
-                             プロフィール
-                            </h1>
-                            </div>
-                        <div class="panel-3-child-half">                   </div>                        
-                        <div class="panel-3-child">
-                            <h1 class="panel-3-small">
-                                チーム
-                            </h1>
-                            <h1 class="panel-3-large">
-                                
-                            </h1>  
-                        </div>
-                        <div class="panel-3-child">
-                            <h1 class="panel-3-small">
-                                背番号
-                            </h1>
-                            <h1 class="panel-3-large">
-                                55
-                            </h1>       
-                        </div>
-                        <div class="panel-3-child-long">
-                            <h1 class="panel-3-long-small">身長                   </h1>                           
-                            <h1 class="panel-3-long-large">169                   </h1>
-                        </div>
-                        <div class="panel-3-child">
-                            <h1 class="panel-3-small">
-                                年齢
-                            </h1>                            
-                            <h1 class="panel-3-large">
-                                22
-                            </h1>                      
-                        </div>
-                        <div class="panel-3-child">
-                            <h1 class="panel-3-small">
-                                体重
-                            </h1>
-                            <h1 class="panel-3-large">
-                                53
-                            </h1>                        
-                        </div>  
-                        <div class="panel-3-child">
-                            panel3-6                        
-                        </div>
-                        <div class="panel-3-child">
-                            panel3-7               
-                        </div> 
-                        <div class="panel-3-child">
-                            panel3-8                        
-                        </div>                
-                        <div class="panel-3-child">
-                            panel3-9                        
-                        </div>  
-                        <div class="panel-3-child">
-                            panel3-10                        
-                        </div>
-
-                        <div class="panel-3-child-half">                   </div>
-                        <div class="panel-3-child-half">                   </div>                                                                                              
-                    </div>
-
-                    <div class="panel-2  col-panel-4">
-                        <div class="panel-2-child part1">
-                            <canvas id="myChart"></canvas>
-                            <script>
-                            </script>
-                        </div>
-                        <div class="panel-2-child part2">
-                            <div class="panel-3-large">ライト</div>
-                            <img src="./img/baseball_position.png">
-                        </div>
-                        <div class="panel-2-child part3">
-                            panel2-3
-                        </div>
-
-                    </div>
-
-                    <div class="panel-2  col-panel-5">
-                        panel5
-                    </div>
-                    <div class="panel-2  col-panel-6">
-                        panel6
-                    </div>                
+    <div class="about-player-background">
+        <p class="about-top-back-trim"><img class="about-top-back-img" src="./img/players/about-player-back.jpg"></p>
+        <div class="about-profile">
+            <p class="about-top-img-trim"><img class="about-top-img" src="./img/players/about-player-img.jpg"></p>
+            <p class="about-name">大谷　翔平</p>
+            <div class="about-sns">
+                <div class="about-player-view">
+                    <i class="fa fa-eye" aria-hidden="true"></i> 25543
+                </div>
+                <div class="about-player-vote">
+                    <i class="fa fa-flag" aria-hidden="true"></i> 3,342
+                </div>
+                <i class="fa fa-facebook asns" aria-hidden="true"> </i>
+                <i class="fa fa-twitter asns" aria-hidden="true"> </i>
+                <i class="fa fa-instagram asns" aria-hidden="true"> </i>
+                <i class="fa fa-check asns" aria-hidden="true"></i>
             </div>
-            </li>
-        </ul>
+
+            <!--<p class="about-cheer">応援済み</p>      -->
+            <p class="about-more-detail">はじめまして。大谷翔平です。大谷 翔平は、岩手県奥州市出身のプロ野球選手。右投左打。北海道日本ハムファイターズ所属。マネージメント契約はホリプロ。血液型はB型。 プロ野球史上でも類を見ない投手と野手を両立する「二刀流」選手で、球速165km/hを投じるNPB最速投手でもある。はじめまして。大谷翔平です。大谷 翔平は、岩手県奥州市出身のプロ野球選手。右投左打。北海道日本ハムファイターズ所属。マネージメント契約はホリプロ。血液型はB型。 プロ野球史上でも類を見ない投手と野手を両立する「二刀流」選手で、球速165km/hを投じるNPB最速投手でもある。</p>
+            <p class="about-cheer">応援する</p>
+        </div>
+    </div>
+    <div class="about-plot">
+        <p>トレンド</p>
+        <div class="about-trend">
+            <div class="about-plot-tags">
+               大谷翔平 の 応援数
+            </div>
+
+            <div class="line-chart">
+                <div class="aspect-ratio">
+                    <canvas id="chart" height="650" width="2000"></canvas>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            // ============================================
+            // As of Chart.js v2.5.0
+            // http://www.chartjs.org/docs
+            // ============================================
+
+            var chart = document.getElementById('chart').getContext('2d'),
+                gradient = chart.createLinearGradient(0, 0, 0, 450);
+
+            gradient.addColorStop(0, 'rgb(231, 76, 60)');
+            gradient.addColorStop(0.5, 'rgb(230, 126, 34)');
+            gradient.addColorStop(1, 'rgb(241, 196, 15)');
+
+
+            var data = {
+                labels: ['9/1', '9/2', '9/3', '9/4', '9/5', '9/6', '9/7', '9/8', '9/9', '9/10', '9/11', '9/12', '9/13', '9/14', '9/15'],
+                datasets: [{
+                    label: 'Custom Label Name',
+                    backgroundColor: gradient,
+                    pointBackgroundColor: 'white',
+                    borderWidth: 4,
+                    borderColor: 'rgb(192, 57, 43)',
+                    data: [40, 45, 45, 50, 55, 70, 81, 84, 84, 100, 102, 103, 110, 120, 130]
+                }]
+            };
+
+
+            var options = {
+                responsive: true,
+                maintainAspectRatio: true,
+                animation: {
+                    easing: 'easeInOutQuad',
+                    duration: 520
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            color: 'rgba(200, 200, 200, 0.05)',
+                            lineWidth: 1
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            color: 'rgba(200, 200, 200, 0.08)',
+                            lineWidth: 1
+                        }
+                    }]
+                },
+                elements: {
+                    line: {
+                        tension: 0.4
+                    }
+                },
+                legend: {
+                    display: false
+                },
+                point: {
+                    backgroundColor: 'white'
+                },
+                tooltips: {
+                    titleFontFamily: 'Open Sans',
+                    backgroundColor: 'rgba(0,0,0,0.3)',
+                    titleFontColor: 'red',
+                    caretSize: 5,
+                    cornerRadius: 2,
+                    xPadding: 10,
+                    yPadding: 10
+                }
+            };
+
+
+            var chartInstance = new Chart(chart, {
+                type: 'line',
+                data: data,
+                options: options
+            });
+        </script>
+
+
+
+    </div>
+    <div class="about-player-posts">
+        <h1>投稿</h1>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">ホームラン2本うったった。</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true">110</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">楽勝</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"> 90</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">豆腐くいてえ</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true">150</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">ホームラン2本うったった。</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true">110</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">楽勝</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"> 90</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
+        <div class="about-player-post">
+            <p class="about-player-post-trim"><img class="about-player-post-icon" src="img/players/about-player-img.jpg"></p>
+            <p class="about-player-post-name">大谷　翔平
+                <p>
+                    <p class="about-player-post-time">9/9 17:10</p>
+                    <p class="about-player-post-text">豆腐くいてえ</p>
+                    <p class="about-player-response">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true">150</i>
+                        <i class="fa fa-commenting-o" aria-hidden="true"> 0</i>
+
+                    </p>
+        </div>
     </div>
 
 </body>
@@ -239,4 +244,5 @@
         <i class="fa fa-facebook header-sns-btn"></i>
     </div>
 </footer>
+
 </html>
